@@ -1,0 +1,45 @@
+// AWS Developer Associate Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM148",
+  slug: "aws-developer-associate",
+  name: "AWS Developer Associate",
+  fullName: "DVA-C02",
+  alias: "DVA-C02",
+  family: "AWS Certification",
+  category: "Professional certification",
+  subcategory: "Cloud development",
+  country: "Global",
+  region: "Global",
+  languages: ["English + localizations"],
+  estimatedAnnualTakers: "varies",
+  testingWindow: "Year-round",
+  schedulePattern: "Continuous",
+  ageGroup: "20-45",
+  targetUser: "Tech professional",
+  delivery: "Computer-based",
+  questionTypes: ["MCQ/MSQ"],
+  adaptivity: "Linear",
+  sections: "65 questions",
+  scoringMode: "Scaled/pass",
+  essayOrSpeaking: "No",
+  ipRisk: "Medium",
+  contentReuse: "cloud_development",
+  uiEngine: "timed_objective",
+  monetizationPotential: "Medium",
+  tier: "Tier 5",
+  launchWave: "Wave 7",
+  themeColor: "#7C3AED",
+  themeColorDark: "#6D28D9",
+  localizationComplexity: "Low",
+  offlineNeeded: false,
+  mobileFirst: true,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;

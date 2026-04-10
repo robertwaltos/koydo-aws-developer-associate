@@ -1,0 +1,26 @@
+{
+  "name": "Koydo AWS Developer Associate — Exam Prep",
+  "short_name": "Koydo AWS Developer Associate",
+  "description": "AWS Developer Associate exam preparation with AI-powered study tools",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#7C3AED",
+  "background_color": "#7C3AED",
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
