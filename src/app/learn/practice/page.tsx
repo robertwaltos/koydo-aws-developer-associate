@@ -62,7 +62,7 @@ export default async function PracticePage({ searchParams }: { searchParams: Pro
           <span className="text-5xl mb-4 block">{topic.icon}</span>
           <h2 className="font-bold text-xl mb-1">{topic.title}</h2>
           <p className="text-sm text-[var(--muted)] mb-6">
-            {topic.minQuestionCount.toLocaleString()} questions · Adaptive difficulty · Time tracking
+            {topic.questionTarget.toLocaleString()} questions · Adaptive difficulty · Time tracking
           </p>
           <div className="grid grid-cols-3 gap-3 text-xs text-[var(--muted)] mb-8">
             <div className="koydo-card p-3"><p className="font-bold text-base text-[var(--foreground)]">Foundational</p><p>Easy warm-up</p></div>
@@ -91,7 +91,7 @@ export default async function PracticePage({ searchParams }: { searchParams: Pro
                 <span className="flex h-9 w-9 items-center justify-center rounded-xl text-xl" style={{ background: `${t.color}20` }}>{t.icon}</span>
                 <div>
                   <p className="text-sm font-medium">{t.title}</p>
-                  <p className="text-xs text-[var(--muted)]">{t.minQuestionCount.toLocaleString()} questions</p>
+                  <p className="text-xs text-[var(--muted)]">{t.questionTarget.toLocaleString()} questions</p>
                 </div>
               </Link>
             ))}

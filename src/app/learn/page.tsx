@@ -117,7 +117,7 @@ export default async function LearnPage() {
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-xl" style={{ background: `${topic.color}20` }}>{topic.icon}</span>
                     <div className="flex-1 min-w-0">
                       <p className="font-medium text-[var(--foreground)] text-sm">{topic.title}</p>
-                      <p className="text-xs text-[var(--muted)]">{topic.minQuestionCount.toLocaleString()} questions</p>
+                      <p className="text-xs text-[var(--muted)]">{topic.questionTarget.toLocaleString()} questions</p>
                     </div>
                     {avg !== null
                       ? <span className="text-sm font-bold" style={{ color: avg >= 70 ? "var(--success)" : "var(--warning)" }}>{avg}%</span>

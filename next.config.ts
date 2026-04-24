@@ -1,12 +1,16 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   experimental: {
     serverActions: { bodySizeLimit: "2mb" },
   },
   typescript: { ignoreBuildErrors: false },
+  webpack: (config: { cache?: unknown }) => {
+    config.cache = false;
+    return config;
+  },
   async headers() {
     return [{
       source: "/(.*)",
@@ -17,6 +21,6 @@ const nextConfig: NextConfig = {
       ],
     }];
   },
-};
+} satisfies NextConfig;
 
 export default nextConfig;
